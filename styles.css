@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: white;
+    --primary-bgcolor: black;
+    --secondary-bgcolor: black;
+    --header: #002f31f4;
+    --orange: #FF8946;
+    --hover: #95B0B1;
+    --jost: "Jost", sans-serif; 
+    --size-small: 18px;
+    --size-medium: 24px;
+    --size-large: 36px;
+    --size-xl: 64px;
+}
+
+/* Header */
+
+.header { 
+    min-height: 50px;
+    width: 100%; 
+    background-color: transparent; 
+    background-color: var(--header);
+    position: fixed;
+    top: 0%;
+    padding: 20px 50px;
+    z-index: 999;
+}
+
+.header-navigation {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-family: var(--jost);
+}
+
+.header-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-ul a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    margin: auto 3px;
+}
+
+.header-ul a:hover {
+    color: var(--hover);
+    transition: 0.3s ease-in;
+}
+
+.header-ul li {
+    list-style: none;
+    font-family: var(--jost);
+    font-size: var(--size-small);
+}
+
+.header-ul .contact-button {
+    background-color: var(--orange);
+}
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    background-image: url("https://images.pexels.com/photos/6492397/pexels-photo-6492397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-family: var(--jost);
+    color: var(--primary-color);
+    font-size: var(--size-xl);
+    text-align: center;
+    text-shadow: 0 0 15px var(--header);
+}
+
+.hero-cta {
+    padding: 20px;
+    background-color: var(--orange);
+    color: var(--primary-color);
+    margin: 25px auto;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    font-weight: 600;
+    font-family: var(--jost);
+}
+
+.hero-cta:hover {
+    background-color: var(--hover);
+    color: var(--header);
+}
